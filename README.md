@@ -14,3 +14,4 @@ Playing around testing out Nest.JS for the first time.
 - Create additional public models that would be used to expose tasks and schedules instead of using the Prisma definitions.
 - Depending on requirements the `PUT` endpoints could be removed in favour of using patch for only allowing updates of specific fields.
 - Woudl move validation or utility functions to separate files under each module or possibly global/core if it was to be reused in multiple places.
+- Move any errors thrown related to requests out of the services to made them "dumb" and not aware of nest and let the controllers handle anything related to requests or responses.
